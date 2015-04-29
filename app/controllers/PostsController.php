@@ -20,7 +20,7 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return "create a new post";
+		return "Show a form for creating a post";
 	}
 
 
@@ -31,7 +31,7 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		return "store a new post into database";
+		return "store a new post";
 	}
 
 
@@ -80,15 +80,6 @@ class PostsController extends \BaseController {
 	public function destroy($id)
 	{
 		return "remove posts with id: $id";
-	}
-
-	public function rollDice($guess)
-	{
-		$data = array(
-			'guess' => $guess,
-			'diceNumber' => rand(1,6)
-		);
-		return View::make('roll-dice')->with($data);
 	}
 
 }
