@@ -16,35 +16,12 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('sayhello/{name}',function($name)
-{
-	if ($name == "Chris") {
-		return Redirect::to('/');
-	} else{
-		$data = array(
-			'name' =>  $name,
-			'another' => 'some variable stuff here'
-		);
-		return View::make('my-first-view')->with($data);
-	}		
-});
+Route::get('sayhello/{name}','HomeController@sayHello');
 
-Route::get('resume',function()
-{
-	return "This is my resume";
-});
+Route::get('resume','HomeController@showResume');
 
-Route::get('portfolio',function()
-{
-	return "This is my portfolio";
-});
+Route::get('portfolio','HomeController@showPortfolio');
 
-Route::get('rolldice/{dice}',function($guess)
-{
-	$data = array(
-		'guess' => $guess,
-		'diceNumber' => rand(1,6)
-	);
+Route::get('rolldice/{dice}','HomeController@rollDice');
 
-	return View::make('roll-dice')->with($data);
-});
+Route::resource('posts', 'PostsController');

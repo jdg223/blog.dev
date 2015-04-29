@@ -1,0 +1,11 @@
+						<svg width="90px" height="66px" viewBox="0 0 90 66" zoomAndPan="disable">
+							<g class="toBanner">
+								<ellipse stroke-width="1" stroke-miterlimit="10" cx="45" cy="21.3" rx="50" ry="40" fill-color="transparent"/>						
+								<line x1="1" y1="1" x2="90" y2="1"/>
+								<line x1="1" y1="1" x2="45.5" y2="46"/>
+								<line x1="90" y1="1" x2="45.5" y2="46"/>
+								<line x1="1" y1="21" x2="90" y2="21"/>
+								<line x1="1" y1="21" x2="45.5" y2="66"/>
+								<line x1="90" y1="21" x2="45.5" y2="66"/>
+							</g>
+						</svg>
