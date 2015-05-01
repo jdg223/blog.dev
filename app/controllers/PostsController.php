@@ -2,6 +2,7 @@
 
 class PostsController extends \BaseController {
 
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -9,7 +10,8 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return 'Output list of all posts.';
+		$posts = Post::paginate(2);
+		return View::make('posts.index')->with('posts',$posts);	
 	}
 
 
@@ -20,7 +22,8 @@ class PostsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return "Show a form for creating a post";
+		return View::make('posts.create');
+
 	}
 
 
@@ -31,7 +34,23 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		return "store a new post";
+		// create the validator
+	    $validator = Validator::make(Input::all(), Post::$rules);
+
+	    // attempt validation
+	    if ($validator->fails()) {
+	        	return Redirect::back()->withInput()->withErrors($validator);
+	        	Session::flash('errorMessage', 'Message Was Not Saved!');
+	    } else {
+			$post = new Post();
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+			Session::flash('successMessage', 'Message Was Successfully Saved!');
+			return Redirect::to('posts');
+	    }
+
+
 	}
 
 
@@ -43,7 +62,10 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return "show posts with id: $id";
+		$data = array(
+			'post' => Post::findorFail($id)
+			);
+		return View::make("posts.show")->with($data);
 	}
 
 
@@ -54,10 +76,11 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function edit($id)
-	{
-		return "This is where you edit posts that has id: $id";	
+	{	$data = array(
+			'post' => Post::findorFail($id) 
+		);
+			return View::make("posts.edit")->with($data);
 	}
-
 
 	/**
 	 * Update the specified resource in storage.
@@ -67,7 +90,21 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return "update posts with id: $id";
+		// create the validator
+	    $validator = Validator::make(Input::all(), Post::$rules);
+
+	    // attempt validation
+	    if ($validator->fails()) {
+	        return Redirect::back()->withInput()->withErrors($validator);
+	        Session::flash('errorMessage', 'Message Was Not Updated!');
+	    } else {
+			$post = Post::find($id);
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+			$post->save();
+			Session::flash('successMessage', 'Message Was Successfully Updated!');
+			return Redirect::back();
+	    }
 	}
 
 
@@ -79,7 +116,12 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		return "remove posts with id: $id";
+		$post = Post::findorFail($id);
+		$post->delete();
+
+		Session::flash('successMessage','Post Was Successfully Deleted.');
+
+		return Redirect::action('PostsController@index');
 	}
 
 }

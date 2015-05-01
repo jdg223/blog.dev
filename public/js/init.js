@@ -12,7 +12,7 @@
 			fullScreenHeader: true,
 
 		// Parallax background effect?
-			parallax: true,
+			parallax: false,
 
 		// Parallax factor (lower = more intense, higher = less intense).
 			parallaxFactor: 10
@@ -22,11 +22,11 @@
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			'global':	{ range: '*', href: 'css/style.css', containers: 1140, grid: { gutters: 40 } },
-			'wide':		{ range: '-1680', href: 'css/style-wide.css', containers: 960 },
-			'normal':	{ range: '-1080', href: 'css/style-normal.css', containers: '95%', viewport: { scalable: false } },
-			'narrow':	{ range: '-840', href: 'css/style-narrow.css', grid: { gutters: 30 } },
-			'mobile':	{ range: '-736', href: 'css/style-mobile.css', containers: '95%!', grid: { collapse: true, gutters: 20 } }
+			'global':	{ range: '*', href: '/css/style.css', containers: 1140, grid: { gutters: 40 } },
+			'wide':		{ range: '-1680', href: '/css/style-wide.css', containers: 960 },
+			'normal':	{ range: '-1080', href: '/css/style-normal.css', containers: '95%', viewport: { scalable: false } },
+			'narrow':	{ range: '-840', href: '/css/style-narrow.css', grid: { gutters: 30 } },
+			'mobile':	{ range: '-736', href: '/css/style-mobile.css', containers: '95%!', grid: { collapse: true, gutters: 20 } }
 		}
 	});
 
@@ -167,6 +167,51 @@
 				usePopupNav: true
 			});
 
+		// Parallax Scrolling
+			$('.img-holder').imageScroll({
+		       image: null,
+		       imageAttribute: 'image',
+		       container: $('body'),
+		       speed: 0.2,
+		       coverRatio: 1.0,
+		       holderClass: 'imageHolder',
+		       holderMinHeight: 200,
+		       extraHeight: 0,
+		       mediaWidth: 1600,
+		       mediaHeight: 900,
+		       parallax: true,
+		       touch: false
+			});
+
+			$('.img-holder-1').imageScroll({
+	           image: null,
+	           imageAttribute: 'image',
+	           container: $('body'),
+	           speed: 0.2,
+	           coverRatio: 2.379,
+	           holderClass: 'imageHolder',
+	           holderMinHeight: 200,
+	           extraHeight: 0,
+	           mediaWidth: 1600,
+	           mediaHeight: 1500,
+	           parallax: true,
+	           touch: false
+			});
+
+			$('.img-holder-2').imageScroll({
+	           image: null,
+	           imageAttribute: 'image',
+	           container: $('body'),
+	           speed: 0.1,
+	           coverRatio: 1.3,
+	           holderClass: 'imageHolder',
+	           holderMinHeight: 200,
+	           extraHeight: 200,
+	           mediaWidth: 1600,
+	           mediaHeight: 3000,
+	           parallax: true,
+	           touch: false
+			});
 	});
 
 })(jQuery);

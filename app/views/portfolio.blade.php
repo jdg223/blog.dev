@@ -1,55 +1,80 @@
 @extends('layouts.master')
 
+@section('head')
+	<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Cabin+Sketch' rel='stylesheet' type='text/css'>
+	<title>Portfolio</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.scrolly.min.js"></script>
+	<script src="js/jquery.imageScroll.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/init.js"></script>
+
+	<noscript>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/skel.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+
+	</noscript>
+@stop
 @section('content')
 		<!-- Header -->
+		 <div class="img-holder" data-image="images/forest.jpg">
 			<section id="header">
 					<header>
 						<h1 class="fontHead">Jd Garza</h1>
 						<p class="fontHead">Design & Development</p>
 					</header>
-				<footer>
-				<a href="#banner">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90px" height="66px" viewBox="0 0 90 66" zoomAndPan="disable">
-							<g class="toBanner">						
-								<line x1="1" y1="1" x2="90" y2="1"/>
-								<line x1="1" y1="1" x2="45.5" y2="46"/>
-								<line x1="90" y1="1" x2="45.5" y2="46"/>
-								<line x1="1" y1="21" x2="90" y2="21"/>
-								<line x1="1" y1="21" x2="45.5" y2="66"/>
-								<line x1="90" y1="21" x2="45.5" y2="66"/>
-							</g>
+				<footer  style="-webkit-transform: translateZ(1)">
+				<a href="#banner" class="style2 scrolly-middle">
+						<svg class="arrows"  style="-webkit-transform: translateZ(1)">
+							<path class="a1" d="M0 0 L30 32 L60 0"></path>
+							<path class="a2" d="M0 20 L30 52 L60 20"></path>
+							<path class="a3" d="M0 40 L30 72 L60 40"></path>
 						</svg>
 					</a>
 				</footer>
 			</section>
+		 </div>
 
 		<!-- Banner -->
 			<section id="banner">
 				<header>
 					<h2>I'm a Programmer</h2>
 				</header>
-				<p>I program using PHP<br />
+				<p>I program using PHP<br/>
 				and All the front end languages</p>
 				<footer>
 					<a href="#first" class="button style2 scrolly">My Work</a>
+					<a href="resume" class="button style2 scrolly">Resume</a>
+					<a href="blog" class="button style2 scrolly">Blog</a>
 				</footer>
 			</section>
 
 		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
+		<div class="img-holder-1" data-image="images/moose.jpeg">
+			<article id="first" class="container box style1 right" style="-webkit-transform: translateZ(1)">
 				<a href="adlister.dev" class="image fit"><img src="images/getlisted.png" alt="" /></a>
 				<div class="inner">
 					<header>
-						<h2>Get<br />
-						Listed</h2>
+						<h2>Get Listed</h2>
 					</header>
-					<p>This program was written in pure php</p>
+					<p>This program was written in pure php. With a classmate of mine from CodeUp</p>
 				</div>
 			</article>
 
 		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="#" class="image fit"><img src="images/whackamole.png" alt="" /></a>
+			<article class="container box style1 left" style="-webkit-transform: translateZ(1)">
+				<a href="#" class="image fit"><img src="images/whackamole.png" alt=""/></a>
 				<div class="inner">
 					<header>
 						<h2>Whack-a-Mole<br />
@@ -58,9 +83,10 @@
 					<p>This was my use of javascipt in creating a Whack-a-Mole game</p>
 				</div>
 			</article>
-
+		</div>		
 		<!-- Portfolio -->
-			<article class="container box style2">
+			<article id= "portfolio">
+			<div class="container style2">
 				<header>
 					<h2>My Other Projects</h2>
 					<p>These are other previous projects<br />
@@ -80,10 +106,13 @@
 						<div class="3u"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
 					</div>
 				</div>
+			</div>
 			</article>
 
+
 		<!-- Contact -->
-			<article class="container box style3">
+		<div class="img-holder-2" data-image="images/trees.jpg">
+			<article class="container box style3" style="-webkit-transform: translateZ(1)">
 				<header>
 					<h2>Wanna Work Together?</h2>
 					<p>I'm currently taking requests for projects, if you have an idea for something or need a site built, send a message and I will respond usually within 24 hours.</p>
@@ -108,7 +137,7 @@
 				</form>
 			</article>
 
-		<!-- Generic -->
+{{-- 		<!-- Generic -->
 			<article class="container box style3">
 				<header>
 					<h2>Generic Box</h2>
@@ -261,23 +290,22 @@
 						</div>
 					</form>
 				</section>
-			</article>
+			</article> --}}
 @stop
 
 @section('footer')
 		<section id="footer">
 			<ul class="icons">
-				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-				<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
 				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 			</ul>
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
 		</section>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 @stop

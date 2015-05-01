@@ -10,9 +10,8 @@
 		font-size: 100px;
 	}
 	body
-	{
+	{	background-image:       url('images/overlay.png');
 		background-color:		#183026;
-		background-image:		url('images/overlay.png'),			url('../images/forest.jpg');
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								cover;
 		background-position: 	top left,							center 0;
@@ -760,6 +759,54 @@
 			display: none;
 		}
 
+	.arrows {
+		width: 60px;
+		height: 72px;
+		position: absolute;
+		left: 50%;
+		margin-left: -30px;
+		bottom: 20px;
+	}
+
+	.arrows path {
+		stroke:#35b88f;
+		fill: transparent;
+		stroke-width: 1px;	
+		animation: arrow 2s infinite;
+		-webkit-animation: arrow 2s infinite; 
+	}
+
+	@keyframes arrow
+	{
+	0% {opacity:0}
+	40% {opacity:1}
+	80% {opacity:0}
+	100% {opacity:0}
+	}
+
+	@-webkit-keyframes arrow 
+	{
+	0% {opacity:0}
+	40% {opacity:1}
+	80% {opacity:0}
+	100% {opacity:0}
+	}
+
+	.arrows path.a1 {
+		animation-delay:-1s;
+		-webkit-animation-delay:-1s;
+	}
+
+	.arrows path.a2 {
+		animation-delay:-0.5s;
+		-webkit-animation-delay:-0.5s;
+	}
+
+	.arrows path.a3 {	
+		animation-delay:0s;
+		-webkit-animation-delay:0s;
+	}
+
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
@@ -842,7 +889,7 @@
 			}
 	*/
 /*********************************************************************************/
-/* Banner                                                                        */
+/* Banner & Portfolio                                                            */
 /*********************************************************************************/
 
 	#banner
@@ -896,6 +943,56 @@
 				border-bottom-color: rgba(255,255,255,0);
 			}
 
+		#portfolio
+		{
+			position: relative;
+			color: #fff;
+			text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
+			text-align: center;
+			background: #35b88f url('images/banner.svg') bottom center no-repeat;
+			padding: 5em 0 5em 0;
+			margin: 0;
+			background-size: 125% auto;
+		}
+
+		#portfolio .button
+		{
+			color: #35b882;
+			text-shadow: 0 0 0.5px rgba(53,184,130,0.25);
+		}
+
+		#portfolio header
+		{
+			margin: 0 0 2em 0;
+		}
+		
+			#portfolio header h2
+			{
+				font-weight: 400;
+				font-size: 1.75em;
+				letter-spacing: 8px;
+			}
+
+		#portfolio p
+		{
+			margin: 0;
+		}
+
+		#portfolio footer
+		{
+			margin: 2em 0 0 0;
+		}
+		
+		#portfolio a
+		{
+			color: inherit;
+			border-bottom-color: rgba(255,255,255,0.5);
+		}
+		
+			#portfolio a:hover
+			{
+				border-bottom-color: rgba(255,255,255,0);
+			}
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
