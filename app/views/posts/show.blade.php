@@ -19,10 +19,13 @@
 	<p>{{ $post->body }}</p>
 		<br>
 	<h3>Created</h3>
-    	<span>{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A') }}</span>
+    	<span>{{ $post->created_at->setTimezone('America/Chicago')->diffForHumans() }}</span>
     	<br>
     <h3>Last Updated</h3>
-    	<span>{{ $post->updated_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A') }}</span>
+    	<span>{{ $post->updated_at->setTimezone('America/Chicago')->diffForHumans() }}</span>
+	    <br>
+	<h3>User</h3>
+    	<span>{{ $post->user->username}}</span>
 	    <br>
 	<a href="{{{action('PostsController@edit',$post->id) }}}" class="btn btn-primary" >Edit Post</a>
 	{{Form::open(array('method' => 'delete', 'action' => ['PostsController@destroy',$post->id]))}}

@@ -11,6 +11,7 @@
 	<script src="js/jquery.scrolly.min.js"></script>
 	<script src="js/jquery.imageScroll.min.js"></script>
 	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/jquery.tabslet.min.js"></script>
 	<script src="js/skel.min.js"></script>
 	<script src="js/init.js"></script>
 
@@ -23,8 +24,10 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/skel.css"/>
 		<link rel="stylesheet" href="css/style.css"/>
+		
 
 	</noscript>
+		<link rel="stylesheet" href="css/icon-style.css">
 @stop
 @section('content')
 		<!-- Header -->
@@ -37,9 +40,9 @@
 				<footer  style="-webkit-transform: translateZ(1)">
 				<a href="#banner" class="style2 scrolly-middle">
 						<svg class="arrows"  style="-webkit-transform: translateZ(1)">
-							<path class="a1" d="M0 0 L30 32 L60 0"></path>
-							<path class="a2" d="M0 20 L30 52 L60 20"></path>
-							<path class="a3" d="M0 40 L30 72 L60 40"></path>
+							<path id="a1" d="M0 0 L30 32 L60 0"></path>
+							<path id="a2" d="M0 20 L30 52 L60 20"></path>
+							<path id="a3" d="M0 40 L30 72 L60 40"></path>
 						</svg>
 					</a>
 				</footer>
@@ -48,20 +51,102 @@
 
 		<!-- Banner -->
 			<section id="banner">
-				<header>
-					<h2>I'm a Programmer</h2>
+
+        <article id="rotation">
+	            <div class='tabs tabs_animate'>
+	              <ul class='horizontal'>
+	                <li><a href="#tab-1">Front-End</a></li>
+	                <li><a href="#tab-2">Back_End</a></li>	
+	                <li><a href="#tab-3">Frameworks</a></li>
+	              </ul>
+	            <div id='tab-1'>
+	              	<span>
+		             	<h2>Front-End Technologies</h2>
+		            		<div class="row">
+		              			<div id="html5" class="col-md-4 pull-left clearfix" style="display:inline-block">
+			            			<div class="cbp_tmicon"> 
+			    					<i class="faPra fa-html5"></i>
+			    					</div>
+			    					<p>HTML</p>
+			    	  			</div>
+
+			    	  			<div id="css3" class="col-md-4 center-block clearfix" style="display:inline-block; float: none;">
+			    					<div class="cbp_tmicon"> 
+			    					<i class="faPra fa-css3"></i>		    	
+			    					</div>
+			    					<p>Css</p>
+			    	  			</div>
+
+			    	  			<div class="col-md-4 pull-right clearfix" style="display:inline-block">
+			    					<div class="cbp_tmicon"> 
+			    					<i class="faPra fa-magic"></i>
+			    					</div>
+			    					<p>jQuery</p>
+			    	  			</div>
+			    			</div>
+					 </span>
+	 			</div>
+	              <div id='tab-2'>
+	              	<span>
+		             	<h2>Back-End Technologies</h2>
+		            		<div class="row">
+		              			<div id="html5" class="col-md-4 pull-left clearfix" style="display:inline-block">
+			            			<div class="cbp_tmicon"> 
+			    					<i class="faPra fa-database"></i>
+			    					</div>
+			    					<p>PHP & MySQL</p>
+			    	  			</div>
+
+			    	  			<div id="css3" class="col-md-4 center-block clearfix" style="display:inline-block; float: none;">
+			    					<div class="cbp_tmicon"> 
+			    					<i class="faPra fa-rocket"></i>		    	
+			    					</div>
+			    					<p>AJAX</p>
+			    	  			</div>
+
+			    	  			<div class="col-md-4 pull-right clearfix" style="display:inline-block">
+			    					<div class="cbp_tmicon"> 
+			    					<i class="faPra fa-server"></i>
+			    					</div>
+			    					<p>LAMP</p>
+			    	  			</div>
+			    			</div>
+					 </span>
+	              </div>
+	              <div id='tab-3'>
+	              	<span>
+		             	<h2>Frameworks</h2>
+		            		<div class="row">
+		              			<div id="html5" class="col-md-4 pull-left clearfix" style="display:inline-block">
+			    						<img src="images/laravel.png">
+			    					<p>Laravel</p>
+			    	  			</div>
+
+			    	  			<div id="css3" class="col-md-4 center-block clearfix" style="display:inline-block; float: none;">
+			    						<img src="images/bootstrap.png">   	
+			    					<p>BootStrap</p>
+			    	  			</div>
+
+			    	  			<div class="col-md-4 pull-right clearfix" style="display:inline-block">
+			    						<img src="images/angular.png">
+			    					<p>Angular JS</p>
+			    	  			</div>
+			    			</div>
+					 </span>
+	              </div>
+	            </div>
+          </article>
+{{-- 				<header>
+					
 				</header>
-				<p>I program using PHP<br/>
-				and All the front end languages</p>
+
 				<footer>
 					<a href="#first" class="button style2 scrolly">My Work</a>
-					<a href="resume" class="button style2 scrolly">Resume</a>
-					<a href="blog" class="button style2 scrolly">Blog</a>
-				</footer>
+				</footer> --}}
 			</section>
 
 		<!-- Feature 1 -->
-		<div class="img-holder-1" data-image="images/moose.jpeg">
+		<div class="img-holder-1" data-image="images/moose.jpg">
 			<article id="first" class="container box style1 right" style="-webkit-transform: translateZ(1)">
 				<a href="adlister.dev" class="image fit"><img src="images/getlisted.png" alt="" /></a>
 				<div class="inner">
@@ -94,7 +179,7 @@
 				</header>
 				<div class="inner gallery">
 					<div class="row 0%">
-						<div class="3u"><a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
+						<div class="3u"><a href="images/simpleSimon.png" class="image fit"><img src="images/simpleSimon.png" alt="" title="Simple Simon Game" /></a></div>
 						<div class="3u"><a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
 						<div class="3u"><a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" alt="" title="Raven" /></a></div>
 						<div class="3u"><a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>

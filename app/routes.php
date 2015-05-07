@@ -23,20 +23,20 @@ Route::get('rolldice/{dice}','HomeController@rollDice');
 
 Route::resource('posts', 'PostsController');
 
+Route::get('login','HomeController@showLogin');
+
+Route::post('login','HomeController@checkLogin');
+
+Route::get('logout','HomeController@logout');
+
 Route::get('orm-test',function()
 {
-	$post = new Post();
-	$post->title = 'New blog';
-	$post->body = 'Lorem Ipsum Dolor';
-	$post->save();
+	$search = 'qui';
 
-	$post2 = new Post();
-	$post2->title = 'New Entry';
-	$post2->body = 'Lorem Ipsum Dolor';
-	$post2->save();
-
-	$post3 = new Post();
-	$post3->title = 'New Entry 3';
-	$post3->body = 'Lorem Ipsum Dolor';
-	$post3->save();
+	try {
+		$post = Post::where('title','like','%'. $search . '%')->orWhere('body','like','%'. $search . '%')->get();
+		dd($post);
+	} catch (Exception $e) {
+		return $e->getMessage();
+	}
 });

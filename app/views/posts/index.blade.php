@@ -21,10 +21,10 @@
 
 	@foreach ($posts as $post)
 		<tr>
-	    	<td> <a href="{{{action('PostsController@show',$post->id) }}}">{{ $post->title }}</a></td>
+	    	<td> <a href="{{{action('PostsController@show',$post->slug) }}}">{{ $post->title }}</a></td>
 	    	<td>{{ $post->body }}</td>
-	    	<td>{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A') }}</td>
-	    	<td>{{ $post->updated_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A') }}</td>
+	    	<td>{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</td>
+	    	<td>{{ $post->updated_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</td>
 	    </tr>
 	@endforeach
 </table>

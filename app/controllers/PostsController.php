@@ -2,7 +2,10 @@
 
 class PostsController extends \BaseController {
 
-
+public function __construct()
+{
+	$this->beforeFilter('auth', array('only' => array('index','create')));
+}
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -10,7 +13,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::paginate(2);
+		$posts = Post::with('user')->paginate(4);
 		return View::make('posts.index')->with('posts',$posts);	
 	}
 
@@ -44,7 +47,9 @@ class PostsController extends \BaseController {
 	    } else {
 			$post = new Post();
 			$post->title = Input::get('title');
+			$post->slug = Input::get('title');
 			$post->body = Input::get('body');
+			$post->user_id = 1;
 			$post->save();
 			Session::flash('successMessage', 'Message Was Successfully Saved!');
 			return Redirect::to('posts');
@@ -62,10 +67,31 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$data = array(
-			'post' => Post::findorFail($id)
+		$post = null;
+
+		// is $id is numeric, $post is equal to $id
+		if (is_numeric($id)) {
+			$post = Post::findOrFail($id);
+		}else{
+
+		// $slug is a non-Numeric string
+			$slug = $id;
+			$post = Post::where('slug','=',$slug)->firstOrFail();
+
+		}
+		// if post is not found log error a redirect to 404 
+		if(!$post) {
+
+			Log::error('model not found');
+			App::abort(404);
+		}
+
+			$data = array(
+			'post' => $post
 			);
-		return View::make("posts.show")->with($data);
+
+		return View::make('posts.show')->with($data);
+
 	}
 
 
@@ -100,6 +126,7 @@ class PostsController extends \BaseController {
 	    } else {
 			$post = Post::find($id);
 			$post->title = Input::get('title');
+			$post->slug = Input::get('title');
 			$post->body = Input::get('body');
 			$post->save();
 			Session::flash('successMessage', 'Message Was Successfully Updated!');
