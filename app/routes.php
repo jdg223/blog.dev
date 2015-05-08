@@ -29,14 +29,29 @@ Route::post('login','HomeController@checkLogin');
 
 Route::get('logout','HomeController@logout');
 
-Route::get('orm-test',function()
-{
-	$search = 'qui';
+// Route::get('logout','HomeController@logout');
 
-	try {
-		$post = Post::where('title','like','%'. $search . '%')->orWhere('body','like','%'. $search . '%')->get();
-		dd($post);
-	} catch (Exception $e) {
-		return $e->getMessage();
-	}
-});
+// Route::get('orm-test',function()
+// {
+	
+// 	$query->Post::with('user');
+// 	$search = 'jdg223';
+
+// 	$query->where('title','like','%'. $search . '%');
+// 	$query->orWhere('body','like','%'. $search . '%');
+
+// 	$query->orWhereHas('user',function ($q)
+// 	{
+// 		$q->where('username','like','%jdg223%');
+// 	});
+
+// 	$query->orWhereHas('user',function ($q)
+// 	{
+// 		$q->where('email','like','%jdg223%');
+// 	});
+
+// 	$post = $query->orderBy('created_at','DESC')->paginate(10);
+
+// }
+
+// });

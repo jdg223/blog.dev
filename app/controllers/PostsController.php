@@ -11,10 +11,35 @@ public function __construct()
 	 *
 	 * @return Response
 	 */
+
 	public function index()
 	{
-		$posts = Post::with('user')->paginate(4);
-		return View::make('posts.index')->with('posts',$posts);	
+		$query = Post::with('user')->paginate(4);
+
+		if (Input::get('search')) {
+			$query = Post::with('user');
+			$search = Input::get('search');
+
+			$query->where('title','like','%'.$search.'%');
+			$query->orWhere('body','like','%'.$search.'%');
+
+			// $query->orWhereHas('user',function ($q) use ($search) {
+			// 	$q->where('username','like',$search);
+			// });
+
+			// $query->orWhereHas('user',function ($q) use ($search) 
+			// {
+			// 	$q->where('email','like',$search);
+			// });
+
+			$post = $query->orderBy('created_at','DESC')->paginate(10);
+			return View::make('posts.index.{search}')->withInput()->with('posts',$post);	
+
+		}
+			return View::make('posts.index')->with('posts',$query);		
+
+		
+
 	}
 
 
@@ -150,5 +175,6 @@ public function __construct()
 
 		return Redirect::action('PostsController@index');
 	}
+
 
 }

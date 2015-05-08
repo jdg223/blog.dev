@@ -11,6 +11,11 @@
 @stop
 
 @section('content')
+	
+	{{ Form::open(array('action' => 'PostsController@index')) }}
+    	{{ Form::text('search',Input::old('search'), array('class' => 'form-control', 'id' =>"search", 'name' => "search", 'placeholder' => "search")) }}
+    	{{Form::button('Submit', array('class' => 'btn btn-primary', 'type' => "submit")) }}
+	{{ Form::close() }}
 <table class="table table-striped">
 	<tr>
 		<th>title</th>

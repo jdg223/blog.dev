@@ -9,7 +9,7 @@
 			parallax: false,
 
 		// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 10
+			parallaxFactor: 1
 
 	};
 
@@ -166,9 +166,7 @@
 		       image: null,
 		       imageAttribute: 'image',
 		       container: $('body'),
-		       speed: 0.2,
 		       coverRatio: 1.0,
-		       holderClass: 'imageHolder',
 		       holderMinHeight: 200,
 		       extraHeight: 0,
 		       mediaWidth: 1600,
@@ -181,28 +179,13 @@
 	           image: null,
 	           imageAttribute: 'image',
 	           container: $('body'),
-	           speed: 0.2,
+	           speed: 0.0,
 	           coverRatio: 2.379,
 	           holderClass: 'imageHolder',
 	           holderMinHeight: 200,
 	           extraHeight: 0,
 	           mediaWidth: 1600,
 	           mediaHeight: 1500,
-	           parallax: true,
-	           touch: false
-			});
-
-			$('.img-holder-2').imageScroll({
-	           image: null,
-	           imageAttribute: 'image',
-	           container: $('body'),
-	           speed: 0.1,
-	           coverRatio: 1.3,
-	           holderClass: 'imageHolder',
-	           holderMinHeight: 200,
-	           extraHeight: 200,
-	           mediaWidth: 1600,
-	           mediaHeight: 3000,
 	           parallax: true,
 	           touch: false
 			});
