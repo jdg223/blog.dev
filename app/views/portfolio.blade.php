@@ -16,7 +16,6 @@
 	<script src="js/init.js"></script>
 
 	<noscript>
-
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -24,13 +23,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/skel.css"/>
 		<link rel="stylesheet" href="css/style.css"/>
-		
-
 	</noscript>
 @stop
 @section('content')
 		<!-- Header -->
-		 <div class="img-holder" data-image="images/forest.jpg">
+		 <div class="header-img">
 			<section id="header">
 					<header>
 						<h1 class="fontHead">Jd Garza</h1>
@@ -49,7 +46,7 @@
 		 </div>
 
 		<!-- Banner -->
-		<div>
+
 			<section id="banner">
 
         <article id="rotation">
@@ -61,7 +58,7 @@
 	              </ul>
 	            <div id='tab-1'>
 	              	<span>
-		             	<h2>Front-End Technologies</h2>
+		             	<h2>Front-End Solutions</h2>
 		            		<div class="row">
 		              			<div id="html5" class="col-md-4 pull-left clearfix" style="display:inline-block">
 			            			<div class="cbp_tmicon"> 
@@ -88,7 +85,7 @@
 	 			</div>
 	              <div id='tab-2'>
 	              	<span>
-		             	<h2>Back-End Technologies</h2>
+		             	<h2>Back-End Solutions</h2>
 		            		<div class="row">
 		              			<div id="html5" class="col-md-4 pull-left clearfix" style="display:inline-block">
 			            			<div class="cbp_tmicon"> 
@@ -138,22 +135,21 @@
           </article>
 
 	</section>
-</div>
 
 		<!-- Feature 1 -->
-		<div class="img-holder-1" data-image="images/moose.jpg">
-			<article id="first" class="container box style1 right" style="-webkit-transform: translateZ(1)">
+		<div class="portfolio-img">
+			<article id="first" class="container box style1 right">
 				<a href="adlister.dev" class="image fit"><img src="images/getlisted.png" alt="" /></a>
 				<div class="inner">
 					<header>
 						<h2>Get Listed</h2>
 					</header>
-					<p>This program was written in pure php. With a classmate of mine from CodeUp</p>
+					<p>This program was written in pure php.With a classmate of mine from CodeUp</p>
 				</div>
 			</article>
 
 		<!-- Feature 2 -->
-			<article class="container box style1 left" style="-webkit-transform: translateZ(1)">
+			<article class="container box style1 left">
 				<a href="#" class="image fit"><img src="images/whackamole.png" alt=""/></a>
 				<div class="inner">
 					<header>

@@ -1,0 +1,650 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+  1. Responsive heading tags
+  2. other elements eg <b> , <blockqoute>
+  3. Typographic Classes / .title, .uppercase, .colorBlack etc.
+  4. Reponsive Paddings / for paddings
+
+------------------------------------------------------------------*/
+
+/*#####################[   B   E   G  I  N   ]###################*/
+
+
+/*------------------------------------------------------------------
+
+1 Responsive heading tags
+    -- h1 to h6
+        Addresses font sizes and margins set differently in IE 6/7.
+        Addresses font sizes within `section` and `article` in Firefox 4+,
+          Safari 5, * and Chrome.
+------------------------------------------------------------------*/
+
+h1,h2,h3,h4,h5,h6 {
+  font-family:"Montserrat",sans-serif;
+}
+
+
+h1 {
+  font-size:90px;
+  line-height:91px
+}
+
+h2 {
+  font-size:70px;
+  line-height:60px
+}
+
+h3 {
+  font-size:36px;
+  line-height:40px
+}
+
+h4 {
+  font-size:28px;
+  line-height:38px
+}
+
+h5 {
+  font-size:21px;
+  line-height:29px
+}
+
+h6 {
+  font-size:16px;
+  line-height:24px
+}
+
+h1 b,h1 strong,h2 b,h2 strong,h3 b,h3 strong,h4 b,h4 strong,h5 b,h5 strong,h6 b,h6 strong {
+  font-weight:700
+}
+
+@media only screen and (max-width: 1120px) {
+h1 {
+  font-size:88px;
+  line-height:102px
+}
+
+h2 {
+  font-size:62px;
+  line-height:74px
+}
+
+h3 {
+  font-size:32px;
+  line-height:32px
+}
+
+h4 {
+  font-size:24px;
+  line-height:32px
+}
+
+h5 {
+  font-size:18px;
+  line-height:26px
+}
+
+h6 {
+  font-size:15px;
+  line-height:22px
+}
+}
+
+@media only screen and (max-width: 860px) {
+h1 {
+  font-size:72px;
+  line-height:86px
+}
+
+h2 {
+  font-size:32px;
+  line-height:46px
+}
+
+h3 {
+  font-size:28px;
+  line-height:38px
+}
+
+h4 {
+  font-size:20px;
+  line-height:28px
+}
+
+h5 {
+  font-size:16px;
+  line-height:24px
+}
+
+h6 {
+  font-size:14px;
+  line-height:20px
+}
+}
+
+@media only screen and (max-width: 640px) {
+h1 {
+  font-size:35px;
+  line-height:37px
+}
+
+h2 {
+  font-size:34px;
+  line-height:34px
+}
+
+h3 {
+  font-size:24px;
+  line-height:32px
+}
+
+h4 {
+  font-size:18px;
+  line-height:26px
+}
+
+h5 {
+  font-size:16px;
+  line-height:24px
+}
+
+h6 {
+  font-size:14px;
+  line-height:20px
+}
+}
+/*------------------------------------------------------------------
+
+2. other elements
+      --Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+
+------------------------------------------------------------------*/
+
+
+abbr[title] {
+  border-bottom:1px dotted
+}
+
+/* * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome. */
+b,strong {
+  font-weight:700
+}
+
+blockquote {
+  margin:1em 40px
+}
+
+/* * Addresses styling not present in Safari 5 and Chrome. */
+dfn {
+  font-style:italic
+}
+
+/* * Addresses styling not present in IE 6/7/8/9. */
+mark {
+  background:#ff0;
+  color:#000
+}
+
+/* * Addresses margins set differently in IE 6/7. */
+p,pre {
+  margin:1em 0
+}
+
+/* * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome. */
+code,kbd,pre,samp {
+  font-family:monospace,serif;
+  _font-family:'courier new',monospace;
+  font-size:1em
+}
+
+/* * Improves readability of pre-formatted text in all browsers. */
+pre {
+  white-space:pre;
+  white-space:pre-wrap;
+  word-wrap:break-word
+}
+
+/* * Addresses CSS quotes not supported in IE 6/7. */
+q {
+  quotes:none
+}
+
+/* * Addresses `quotes` property not supported in Safari 4. */
+q:before,q:after {
+  content:'';
+  content:none
+}
+
+small {
+  font-size:15px
+}
+
+/* * Prevents `sub` and `sup` affecting `line-height` in all browsers. */
+sub,sup {
+  font-size:75%;
+  line-height:0;
+  position:relative;
+  vertical-align:baseline
+}
+
+sup {
+  top:-.9em
+}
+
+sub {
+  bottom:-.25em
+}
+
+a {
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  -o-transition:all .5s;
+  transition:all .5s
+}
+
+a:hover,a:focus {
+  text-decoration:none
+}
+
+p {
+  color:#8c9398;
+  word-spacing:1px;
+  line-height:25px;
+  font-size:14px
+}
+
+fieldset {
+  margin-bottom:20px
+}
+
+input[type="text"],input[type="password"],input[type="email"],textarea,select {
+  background:transparent;
+  border:1px solid #ddd;
+  border-top:none!important;
+  border-left:none!important;
+  border-right:none!important;
+  color:#666;
+  display:block;
+  font:13px "Montserrat",sans-serif;
+  letter-spacing:.1em;
+  margin:0;
+  max-width:100%;
+  margin-bottom:0;
+  outline:none;
+  padding:15px;
+  text-transform:uppercase;
+  width:100%!important
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  color:#666
+}
+
+input[type="text"]::-moz-placeholder {
+  color:#666
+}
+
+input[type="text"]:-ms-input-placeholder {
+  color:#666
+}
+
+input[type="text"]:-moz-placeholder {
+  color:#666
+}
+
+label {
+  color:#666;
+  font:13px "Montserrat",sans-serif;
+  font-weight:400!important;
+  letter-spacing:.1em;
+  padding:15px;
+  text-transform:uppercase
+}
+
+select {
+  padding:0
+}
+
+input[type="text"]:focus,input[type="password"]:focus,input[type="email"]:focus,textarea:focus {
+  border:1px solid #000;
+  color:#000
+}
+
+textarea {
+  min-height:100px;
+  resize:none;
+  width:100%!important
+}
+
+label,legend {
+  display:block;
+  font-weight:700;
+  font-size:13px
+}
+
+select {
+  width:220px
+}
+
+input[type="checkbox"] {
+  display:inline
+}
+
+label span,legend span {
+  font-weight:400;
+  font-size:13px;
+  color:#444
+}
+/*------------------------------------------------------------------
+
+3. Typographic Classes
+    -- .title,subtitle,font etc
+------------------------------------------------------------------*/
+
+
+.font-playfair {
+  font-family:'PlayFair Display'!important;
+  font-weight:400!important
+}
+
+.title {
+  font-size:75px;
+  font-weight:100;
+  letter-spacing:.025em;
+  line-height:76px;
+  margin-bottom:0;
+  font-family:"Montserrat";
+  margin-left:20px
+}
+
+.title2 {
+  font-size:52px;
+  line-height:65px;
+  margin-bottom:10px;
+  font-weight:400;
+  font-family:"Montserrat",sans-serif;
+}
+
+.title3 {
+  font-size:24px;
+  font-family:"Montserrat";
+  letter-spacing:.1em;
+  margin-bottom:30px;
+  text-transform:uppercase
+}
+
+.subtitle {
+  font-family:"Montserrat";
+  font-size:15px;
+  font-weight:400;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin:auto;
+  margin-top:10px;
+  max-width:600px
+}
+
+
+.hvr-underline-from-left {
+  display:inline-block;
+  vertical-align:middle;
+  -webkit-transform:translateZ(0);
+  transform:translateZ(0);
+  box-shadow:0 0 1px rgba(0,0,0,0);
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  -moz-osx-font-smoothing:grayscale;
+  position:relative;
+  overflow:hidden
+}
+
+.hvr-underline-from-left:before {
+  content:"";
+  position:absolute;
+  z-index:-1;
+  left:0;
+  right:100%;
+  bottom:0;
+  background:#FFF;
+  height:1px;
+  -webkit-transition-property:right;
+  transition-property:right;
+  -webkit-transition-duration:.3s;
+  transition-duration:.3s;
+  -webkit-transition-timing-function:ease-out;
+  transition-timing-function:ease-out
+}
+
+.hvr-underline-from-left:hover:before,.hvr-underline-from-left:focus:before,.hvr-underline-from-left:active:before {
+  right:0
+}
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+.title {
+  font-size:60px;
+  line-height:60px;
+  margin-bottom:20px;
+  margin-left:auto
+}
+
+.subtitle {
+  max-width:600px;
+  font-size:15px;
+  font-weight:200;
+  letter-spacing:.1em;
+  margin-bottom:30px;
+  margin-left:auto
+}
+
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 400px) {
+.title {
+  font-size:30px;
+  line-height:40px;
+  margin-bottom:10px;
+  margin-left:auto
+}
+
+.title2 {
+  font-size:36px;
+  line-height:36px;
+  margin-bottom:10px;
+  font-weight:400;
+  font-family:"Montserrat",sans-serif
+}
+
+.subtitle {
+  font-size:12px;
+  margin-bottom:15px
+}
+
+}
+
+.content-label {
+  background:#fff;
+  color:#000;
+  margin:5px;
+  padding:0 15px;
+  letter-spacing:0
+}
+
+.colorWhite {
+  color:#fff
+}
+
+.colorWhite a {
+  color:#fff
+}
+.colorBlack {
+  color:#000
+}
+.capitalize {
+  text-transform:capitalize!important;
+}
+
+.uppercase {
+  text-transform:uppercase;
+}
+
+/*------------------------------------------------------------------
+
+4.  Responsive paddings
+    
+------------------------------------------------------------------*/
+
+.padd16 {
+  padding:16px!important
+}
+
+.padding120 {
+  padding:120px 0;
+}
+.padd-top-xs {
+  padding-top:1.5em
+}
+
+.padd-top-sm {
+  padding-top:2.2em
+}
+
+.padd-top-md {
+  padding-top:3em
+}
+
+.padd-top-lg {
+  padding-top:4.3em
+}
+
+.padd-top-2x {
+  padding-top:6.5em
+}
+
+.padd-top-3x {
+  padding-top:9.4em
+}
+
+.padd-top-4x {
+  padding-top:11.5em
+}
+
+.padd-top-5x {
+  padding-top:15em
+}
+
+.padd-bottom-xs {
+  padding-bottom:1.5em
+}
+
+.padd-bottom-sm {
+  padding-bottom:2.2em
+}
+
+.padd-bottom-md {
+  padding-bottom:3em
+}
+
+.padd-bottom-lg {
+  padding-bottom:4.3em
+}
+
+.padd-bottom-2x {
+  padding-bottom:6.5em
+}
+
+.padd-bottom-3x {
+  padding-bottom:9.4em
+}
+
+.padd-bottom-4x {
+  padding-bottom:11.5em
+}
+
+.padd-bottom-5x {
+  padding-bottom:16em
+}
+
+.no-padding {
+  padding:0
+}
+
+@media (max-width: 767px) {
+html,body,.text-right,.text-left {
+  text-align:center
+}
+
+.bordered-right,.bordered-left {
+  border-left:0;
+  border-right:0;
+  padding-left:0;
+  padding-right:0
+}
+
+.padd-top-xs {
+  padding-top:1em
+}
+
+.padd-top-sm {
+  padding-top:1.3em
+}
+
+.padd-top-md {
+  padding-top:2em
+}
+
+.padd-top-lg {
+  padding-top:2.6em
+}
+
+.padd-top-2x {
+  padding-top:4.5em
+}
+
+.padd-top-3x {
+  padding-top:5em
+}
+
+.padd-top-4x {
+  padding-top:6em
+}
+
+.padd-top-5x {
+  padding-top:8em
+}
+
+.padd-bottom-xs {
+  padding-bottom:1em
+}
+
+.padd-bottom-sm {
+  padding-bottom:1.3em
+}
+
+.padd-bottom-md {
+  padding-bottom:2em
+}
+
+.padd-bottom-lg {
+  padding-bottom:2.6em
+}
+
+.padd-bottom-2x {
+  padding-bottom:4.5em
+}
+
+.padd-bottom-3x {
+  padding-bottom:5em
+}
+
+.padd-bottom-4x {
+  padding-bottom:6em
+}
+
+.padd-bottom-5x {
+  padding-bottom:8em
+}
+}

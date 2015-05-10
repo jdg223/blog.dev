@@ -197,7 +197,7 @@
 
 	#header
 	{
-		padding: 6em 0 6em 0;
+		/*padding: 6em 0 6em 0;*/
 	}
 
 		#header header
@@ -299,3 +299,12 @@
 		{
 			opacity: 0.5;
 		}
+
+.footer-img{
+
+background: url("../images/trees-mobile.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}

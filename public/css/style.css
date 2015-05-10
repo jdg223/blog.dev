@@ -151,7 +151,9 @@
 		clear: both;
 	}
 
-	/* Sections/Article */
+/*********************************************************************************/
+/* Sections & Article                                                            */
+/*********************************************************************************/
 	
 		section,
 		article
@@ -566,34 +568,9 @@
 		.box
 		{
 			position: relative;
-			margin-top: 9em;
+			/*margin-top: 9em;*/
 			margin-bottom: 0;
 		}
-		
-/*			.box:after
-			{
-				content: '';
-				display: block;
-				position: absolute;
-				top: -9em;
-				left: 50%;
-				height: 9em;
-				border-left: solid 1px #fff;
-			}
-		
-			.box:before
-			{
-				content: '';
-				display: block;
-				width: 90px;
-				height: 66px;
-				position: absolute;
-				left: 50%;
-				top: -4.5em;
-				margin-left: -45px;
-				margin-top: -33px;
-				background: url('images/arrow.svg') no-repeat;
-			}*/
 		
 			.box :last-child
 			{
@@ -883,23 +860,8 @@
 				bottom: -9em;
 				left: 50%;
 				height: 9em;
-				/*border-left: solid 1px #fff;*/
 			}
-/*		
-			#header footer:before
-			{
-				content: '';
-				display: block;
-				width: 90px;
-				height: 66px;
-				position: absolute;
-				left: 50%;
-				bottom: -4.5em;
-				margin-left: -45px;
-				margin-bottom: -33px;
-				background: url('images/arrow.svg') no-repeat;
-			}
-	*/
+
 /*********************************************************************************/
 /* Banner & Portfolio                                                            */
 /*********************************************************************************/
@@ -1225,14 +1187,10 @@
 			}
 
 .tabs > DIV {
-	/*border-top: 1px solid #c7c7c7*/
-	/*margin-top: 10px;*/
 	background: white !important;
-	/*border-bottom: 4px solid #E95855 !important;*/
 }
 
 .tabs > DIV SPAN {
-	/*border-bottom: 4px solid #E5E5E5 !important;*/
 	color: #ccc !important;
 	font-weight: 300;
 	line-height: 185px !important;
@@ -1245,12 +1203,10 @@
 	list-style: none outside none;
 	display: block;
 	margin: 0;
-	/*padding-bottom: 30px;*/
 }
 
 .tabs LI {
 	background: #a0cac0;;
-	/*border-bottom: 4px solid #E5E5E5;*/
 	margin: 0 0 0 0;
 	display: inline-block;
 }
@@ -1267,7 +1223,6 @@
 .tabs LI:hover {
 	background: #91c87e;
 	color: #fff;
-	/*border-bottom: 4px solid #68a697;*/
 }
 
 .tabs LI:hover A {
@@ -1303,13 +1258,11 @@
   font-size: 1.4em;
   line-height: 40px;
   -webkit-font-smoothing: antialiased;
-  /*position: absolute;*/
   color: #151515;
   background: #324454;
   border-radius: 50%;
   text-align: center;
   left: 8%;
-  /*margin: 0 0 0 -25px;*/
 }
 
 div > p{
@@ -1321,6 +1274,26 @@ span > h2{
 	padding-bottom: 30px;
 }
 
+.header-img{
+
+background: url("../images/forest.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+}
+
+.portfolio-img{
+
+background: url("../images/moose.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size: cover;
+ padding-top: 10px;
+ padding-bottom: 240px;
+}
+
 .footer-img{
 
 background: url("../images/trees.jpg") no-repeat center center fixed;
@@ -1330,7 +1303,13 @@ background: url("../images/trees.jpg") no-repeat center center fixed;
  background-size: cover;
 }
 
+article#first.container.box.style1.right{
+	top: 90px;
+}
 
+article.container.box.style1.left{
+	top: 180px;
+}
 article.container.box.style3{
 	top: 100px;
 	margin-top: 0px;
