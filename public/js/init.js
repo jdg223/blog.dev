@@ -3,13 +3,13 @@
 	var settings = {
 
 		// Full screen header?
-			fullScreenHeader: true,
+			fullScreenHeader: false,
 
 		// Parallax background effect?
 			parallax: false,
 
 		// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 1
+			parallaxFactor: 0
 
 	};
 
