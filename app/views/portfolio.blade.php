@@ -1,233 +1,392 @@
-@extends('layouts.master')
-
-@section('head')
-	<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Cabin+Sketch' rel='stylesheet' type='text/css'>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
 	<title>Portfolio</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.scrolly.min.js"></script>
-	<script src="js/jquery.imageScroll.min.js"></script>
-	<script src="js/jquery.poptrox.min.js"></script>
-	<script src="js/jquery.tabslet.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/init.js"></script>
-
-	<noscript>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" href="css/skel.css"/>
-		<link rel="stylesheet" href="css/style.css"/>
-	</noscript>
-@stop
-@section('content')
-		<!-- Header -->
-		 <div class="header-img">
-			<section id="header">
-					<header>
-						<h1 class="fontHead">Jd Garza</h1>
-						<p class="fontHead">Design & Development</p>
-					</header>
-				<footer>
-				<a href="#banner" class="style2 scrolly-middle">
-						<svg class="arrows">
-							<path id="a1" d="M0 0 L30 32 L60 0"></path>
-							<path id="a2" d="M0 20 L30 52 L60 20"></path>
-							<path id="a3" d="M0 40 L30 72 L60 40"></path>
-						</svg>
-					</a>
-				</footer>
-			</section>
-		 </div>
-
-		<!-- Banner -->
-
-			<section id="banner">
-
-        <article id="rotation">
-	            <div class='tabs tabs_animate'>
-	              <ul class='horizontal'>
-	                <li><a href="#tab-1">Front-End</a></li>
-	                <li><a href="#tab-2">Back_End</a></li>	
-	                <li><a href="#tab-3">Frameworks</a></li>
-	              </ul>
-	            <div id='tab-1'>
-	              	<span>
-		             	<h2>Front-End Solutions</h2>
-		            		<div class="row">
-		              			<div id="html5" class="col-md-4 pull-left clearfix" style="display:inline-block">
-			            			<div class="cbp_tmicon"> 
-			    					<i class="faPra fa-html5"></i>
-			    					</div>
-			    					<p>HTML</p>
-			    	  			</div>
-
-			    	  			<div id="css3" class="col-md-4 center-block clearfix" style="display:inline-block; float: none;">
-			    					<div class="cbp_tmicon"> 
-			    					<i class="faPra fa-css3"></i>		    	
-			    					</div>
-			    					<p>Css</p>
-			    	  			</div>
-
-			    	  			<div class="col-md-4 pull-right clearfix" style="display:inline-block">
-			    					<div class="cbp_tmicon"> 
-			    					<i class="faPra fa-magic"></i>
-			    					</div>
-			    					<p>jQuery</p>
-			    	  			</div>
-			    			</div>
-					 </span>
-	 			</div>
-	              <div id='tab-2'>
-	              	<span>
-		             	<h2>Back-End Solutions</h2>
-		            		<div class="row">
-		              			<div id="html5" class="col-md-4 pull-left clearfix" style="display:inline-block">
-			            			<div class="cbp_tmicon"> 
-			    					<i class="faPra fa-database"></i>
-			    					</div>
-			    					<p>PHP & MySQL</p>
-			    	  			</div>
-
-			    	  			<div id="css3" class="col-md-4 center-block clearfix" style="display:inline-block; float: none;">
-			    					<div class="cbp_tmicon"> 
-			    					<i class="faPra fa-rocket"></i>		    	
-			    					</div>
-			    					<p>AJAX</p>
-			    	  			</div>
-
-			    	  			<div class="col-md-4 pull-right clearfix" style="display:inline-block">
-			    					<div class="cbp_tmicon"> 
-			    					<i class="faPra fa-server"></i>
-			    					</div>
-			    					<p>LAMP</p>
-			    	  			</div>
-			    			</div>
-					 </span>
-	              </div>
-	              <div id='tab-3'>
-	              	<span>
-		             	<h2>Frameworks</h2>
-		            		<div class="row">
-		              			<div id="html5" class="col-md-4 pull-left clearfix" style="display:inline-block">
-			    						<img src="images/laravel.png">
-			    					<p>Laravel</p>
-			    	  			</div>
-
-			    	  			<div id="css3" class="col-md-4 center-block clearfix" style="display:inline-block; float: none;">
-			    						<img src="images/bootstrap.png">   	
-			    					<p>BootStrap</p>
-			    	  			</div>
-
-			    	  			<div class="col-md-4 pull-right clearfix" style="display:inline-block">
-			    						<img src="images/angular.png">
-			    					<p>Angular JS</p>
-			    	  			</div>
-			    			</div>
-					 </span>
-	              </div>
-	            </div>
-          </article>
-
-	</section>
-
-		<!-- Feature 1 -->
-		<div class="portfolio-img">
-			<article id="first" class="container box style1 right">
-				<a href="adlister.dev" class="image fit"><img src="images/getlisted.png" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Get Listed</h2>
-					</header>
-					<p>This program was written in pure php.With a classmate of mine from CodeUp</p>
-				</div>
-			</article>
-
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="#" class="image fit"><img src="images/whackamole.png" alt=""/></a>
-				<div class="inner">
-					<header>
-						<h2>Whack-a-Mole<br />
-						Samuel Jackson Style</h2>
-					</header>
-					<p>This was my use of javascipt in creating a Whack-a-Mole game</p>
-				</div>
-			</article>
-		</div>		
-		<!-- Portfolio -->
-		<div>
-			<article id= "portfolio">
-			<div class="container style2">
-				<header>
-					<h2>My Other Projects</h2>
-					<p>These are other previous projects<br />
-					that I have built.</p>
-				</header>
-				<div class="inner gallery">
-					<div class="row 0%">
-						<div class="3u"><a href="images/simpleSimon.png" class="image fit"><img src="images/simpleSimon.png" alt="" title="Simple Simon Game" /></a></div>
-						<div class="3u"><a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
-						<div class="3u"><a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" alt="" title="Raven" /></a></div>
-						<div class="3u"><a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.png">
+	
+	<link href="css/portfolio.css" rel="stylesheet" type="text/css" />
+	<link href="css/portfolio-plugins.css" rel="stylesheet" type="text/css" />
+	<link href="css/fonts/ionicons.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/portfolio-style.css" rel="stylesheet" type="text/css" />	
+	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	
+	
+	<!-- Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+	
+</head>
+<body>
+	<div id="back-to-top" class="back-to-top"><a href="#back-to-top"><i class="icon ion-ios-arrow-up"></i></a></div> 
+	
+	<div class="header-navigation-menu minimal-nav-menu transparent-nav-menu clearfix">
+		<div class="container">
+			<div class="header-icon"></div>
+			<div class="toggle-nav-menu toggle-menu primary-typo strong"><div>MENU</div><div><a href="#"><div class="burg"></div></a></div></div> 
+			<div class="header-menu">
+				<nav class="nav-menu page-scroll" >
+					<ul class="nav-menu-content">
+						<li><a href="#works">Work</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="posts">Blog</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>		
+			</div>
+		</div>
+		<nav class="tab-nav-menu page-scroll" >
+			<ul class="tab-nav-menu-content container">
+				<li><a href="#works">Work</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="posts">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>	
+	</div>
+	<!--<div class="spacer"></div>-->	
+	
+	<div class="content">
+		<!-- Fullscreen Slider -->
+		<div id="agni-slides" class="agni-slides">
+			<div class="slides-container" data-top="transform:translateY(0px);">
+				<div>
+					<div class="slide-image">
+						<img src="images/keyboard.jpg" alt="Slide 1">
+						<!--<div class="overlay"></div>-->
 					</div>
-					<div class="row 0%">
-						<div class="3u"><a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" alt="" title="Cherish" /></a></div>
-						<div class="3u"><a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" alt="" title="Different." /></a></div>
-						<div class="3u"><a href="images/fulls/07.jpg" class="image fit"><img src="images/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
-						<div class="3u"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
+					<div class="slide-container container text-left">
+						<div class="slide-content page-scroll">
+							<div class="text-rotator"><p class="primary-typo strong">JD Garza</p></div>
+							<p class="text-slide-additional-title">DESIGN & DEVELOPMENT</p>
+							<a href="#works" class="btn btn-default btn-alt primary-typo">My Work</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			</article>
+			<nav class="slides-navigation">
+				<a href="#" class="next"><i class="ion-ios-arrow-right"></i></a>
+				<a href="#" class="prev"><i class="ion-ios-arrow-left"></i></a>
+			</nav>
 		</div>
-
-		<!-- Contact -->
-		<div class="footer-img">
-			<article class="container box style3" style="-webkit-transform: translateZ(1)">
-				<header>
-					<h2>Wanna Work Together?</h2>
-					<p>I'm currently taking requests for projects, if you have an idea for something or need a site built, send a message and I will respond usually within 24 hours.</p>
-				</header>
-				<form method="post" action="#">
-					<div class="row 50%">
-						<div class="6u"><input type="text" class="text" name="name" placeholder="Name" /></div>
-						<div class="6u"><input type="text" class="text" name="email" placeholder="Email" /></div>
+	
+		<!-- About us -->
+		<section id="about" class="about-4 about-4_bg section-bg-color rel-img" data-top-bottom="background-position: 0px 200px;" data-bottom-top="background-position: 0px -675px">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-offset-1 col-md-11 padding-top-130 padding-bottom-100">
+						<h1 class="big-heading heading heading-underlined black">Full Stack Software Engineer</h1>
+						<p>I have a passion for turning people's great ideas into reality and have the skillset necessary to make it happen.</p>
 					</div>
-					<div class="row 50%">
-						<div class="12u">
-							<textarea name="message" placeholder="Message"></textarea>
-						</div>
-					</div>
-					<div class="row">
-						<div class="12u">
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</div>
-					</div>
-				</form>
-
-			</article>
-@stop
-
-@section('footer')
-		<section id="footer">
-			<ul class="icons">
-				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-			</ul>
+				</div>
+			</div>
 		</section>
-	</div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		
+		<!-- Services -->
+		<section id="services" class="service-3 service-3_bg rel-img" data-top-bottom="background-position: 0px 200px;" data-bottom-top="background-position: 0px -300px"> <!--  -->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-5 padding-top-130 padding-bottom-130">
+						<ul class="nav nav-tabs small list-inline primary-typo">
+							<li class="active">
+								<a data-toggle="tab" href="#tab1">Design</a>
+							</li>
+							<li class="">
+								<a data-toggle="tab" href="#tab2">Development</a>
+							</li>
+						</ul>
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-@stop
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div id="tab1" class="tab-pane fade active in">
+								<div class="row">
+									<div class="col-sm-12 col-md-12 margin-top-40">
+										<div class="service-2-content space-reduced">
+											<div class="service-2-icon">
+												<i class="ion-iphone large-icon"></i>
+											</div>
+											<div class="service-2-text">
+												<h5 class="heading heading-underlined">Mobile First</h5>
+												<p>Nowadays, with screen sizes and resolutions varying greatly, it has become essential to ensure that when developing a website or application that the interface remains user friendly no matter the device. Something I take seriously when developing applications.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-12 margin-top-40">
+										<div class="service-2-content space-reduced">
+											<div class="service-2-icon">
+												<i class="ion-social-javascript large-icon"></i>
+											</div>
+											<div class="service-2-text">
+												<h5 class="heading heading-underlined">Javascript</h5>
+												<p>Javascript is perhaps the most dynamic of programming languages that exist and whether you need complex animations or a site built using AngularJs, I can integrate it into an application to suit your needs.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-12 margin-top-40">
+										<div class="service-2-content space-reduced">
+											<div class="service-2-icon">
+												<i class="ion-cube large-icon"></i>
+											</div>
+											<div class="service-2-text">
+												<h5 class="heading heading-underlined">Clean & Modern Design</h5>
+												<p>The design and layout of a website is an integral part of attracting users and keeping traffic driven to the site, with that in mind I work extensively on the "Front-End" of the site utilizing clean and modern arcitecture to ensure that your visual specifications are met.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="tab2" class="tab-pane fade">
+								<div class="row">
+									<div class="col-sm-12 col-md-12 margin-top-40">
+										<div class="service-2-content space-reduced">
+											<div class="service-2-icon">
+												<i class="fa fa-code fa-4x"></i>
+											</div>
+											<div class="service-2-text">
+												<h5 class="heading heading-underlined">PHP & Laravel</h5>
+												<p>For those that need something more than just a beautiful website, I can develop an application for virtually anything that someone may need</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-12 margin-top-40">
+										<div class="service-2-content space-reduced">
+											<div class="service-2-icon">
+												<i class="fa fa-database fa-4x"></i>
+											</div>
+											<div class="service-2-text">
+												<h5 class="heading heading-underlined">MySQL Databases</h5>
+												<p>Nunc in elit nec dolor consectetur sodales. Mauris tellus nulla, hendrerit sit amet porta sit amet.</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-md-12 margin-top-40">
+										<div class="service-2-content space-reduced">
+											<div class="service-2-icon">
+												<i class="fa fa-linux fa-4x"></i>
+											</div>
+											<div class="service-2-text">
+												<h5 class="heading heading-underlined">LEMP</h5>
+												<p><strong>ABBR.</strong>(Linux,Nginx,MySql,PHP),Nunc in elit nec dolor consectetur sodales. Mauris tellus nulla, hendrerit sit amet porta sit amet.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-offset-1 col-md-6 padding-left-130 margin-200 padding-bottom-120 padding-top-120 visible-md visible-lg white">
+						<div class="section-heading">
+							<h2 class="heading heading-underlined">Solutions</h2>
+							<p class="additional-heading">How I build applications</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	<!-- Work -->
+		<section id="works" class="work">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8 col-md-6 margin-top-140">
+						<div class="section-heading">
+							<h2 class="heading heading-underlined black">My Work</h2>
+							<p class="additional-heading">These are examples of my previous work</p>
+						</div>
+					</div>
+					<div class="col-xs-12 margin-bottom-90">
+						<div class="portfolio-filter text-left">
+						</div>
+						<div id="portfolio-page" class="row portfolio-page portfolio-guttered">
+							<div id="portfolio-11" class="white portfolio-post all branding print col-xs-12 col-sm-6 col-md-4 portfolio-thumbnail" >						
+								<figure class="portfolio-thumbnail-container">
+									<div class="thumbnail-image">
+										<img src="images/simpleSimon.png" alt="thumbnail" />
+									</div>
+									<figcaption class="portfolio-thumbnail-caption portfolio-thumbnail-attachments text-right">
+										<h5 class="heading heading-underlined portfolio-thumbnail-heading"><a href="{{{action('HomeController@showSimon')}}}">Simple Simon</a></h5>
+										<ul class="portfolio-category list-inline">
+											<li>A javascript version of the classic Simple Simon game.</li>
+										</ul>
+									</figcaption>
+								</figure>                           
+							</div>
+							<div id="portfolio-12" class="white portfolio-post all advertise col-xs-12 col-sm-6 col-md-4 portfolio-thumbnail" >						
+								<figure class="portfolio-thumbnail-container">
+									<div class="thumbnail-image ">
+										<img src="images/whackamole.png" alt="thumbnail" />
+									</div>
+									<figcaption class="portfolio-thumbnail-caption portfolio-thumbnail-attachments text-right">
+										<h5 class="heading heading-underlined portfolio-thumbnail-heading"><a href="{{{action('HomeController@showMole')}}}">Whack-A-Mole</a></h5>
+										<ul class="portfolio-category list-inline">
+											<li>A javascript game that based on the classic childrens game whack-a-mole</li>
+										</ul>
+									</figcaption>
+								</figure>                           
+							</div>
+							<div id="portfolio-13" class="white portfolio-post all advertise print col-xs-12 col-sm-6 col-md-4 portfolio-thumbnail" >						
+								<figure class="portfolio-thumbnail-container">
+									<div class="thumbnail-image">
+										<img src="images/getlisted.png" alt="thumbnail" />
+									</div>
+									<figcaption class="portfolio-thumbnail-caption portfolio-thumbnail-attachments text-right">
+										<h5 class="heading heading-underlined portfolio-thumbnail-heading"><a href="{{{action('HomeController@getListed')}}}">Get Listed</a></h5>
+										<ul class="portfolio-category list-inline">
+											<li>A modern re-vamped version of the well know site Craigslist</li>
+										</ul>
+									</figcaption>
+								</figure>                           
+							</div>
+							<div id="portfolio-14" class="white portfolio-post all branding col-xs-12 col-sm-12 col-md-8 portfolio-thumbnail" >						
+								<figure class="portfolio-thumbnail-container">
+									<div class="thumbnail-image">
+										<img src="images/tulipmania.png" alt="thumbnail" />
+									</div>
+									<figcaption class="portfolio-thumbnail-caption portfolio-thumbnail-attachments text-right">
+										<h5 class="heading heading-underlined portfolio-thumbnail-heading"><a href="http://tulipmania.rocks">Tulip Mania</a></h5>
+										<ul class="portfolio-category list-inline">
+											<li>A game based on the historic frenzy of the 1600's</li>
+										</ul>
+									</figcaption>
+								</figure>                           
+							</div>
+							<div id="portfolio-15" class="white portfolio-post all print col-xs-12 col-sm-6 col-md-4 portfolio-thumbnail" >						
+								<figure class="portfolio-thumbnail-container">
+									<div class="thumbnail-image">
+										<img src="images/ajax_app.png" alt="thumbnail" />
+									</div>
+									<figcaption class="portfolio-thumbnail-caption portfolio-thumbnail-attachments text-right">
+										<h5 class="heading heading-underlined portfolio-thumbnail-heading"><a href="{{{action('HomeController@ajaxWeather')}}}">AJAX Weather App</a></h5>
+										<ul class="portfolio-category list-inline">
+											<li>A weather application that uses ajax and google maps to get weather updated in real time.</li>
+										</ul>
+									</figcaption>
+								</figure>                           
+							</div>
+
+							<div id="portfolio-17" class="white portfolio-post all branding col-xs-12 col-sm-12 col-md-8 portfolio-thumbnail" >						                         
+							</div>
+						</div>	
+					</div>	
+				</div>
+			</div>
+		</section>
+		
+	<!-- Contact bar -->
+		<section id="contact-bar" class="contact-bar section-bg-color">
+			<div class="container">
+				<div class="row margin-70">
+					<div class="col-md-4 margin-60">
+						<div class="contact-content">
+							<div class="contact-icon">
+								<i class="ion-paper-airplane medium-icon"></i>
+							</div>
+							<div class="contact-details">
+								<h5 class="contact-heading-text">EMAIL</h5>
+								<p>jdgarza22@yahoo.com</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 margin-60"></div>
+					<div class="col-md-4 margin-60">
+						<div class="contact-content">
+							<div class="contact-icon">
+								<i class="ion-iphone medium-icon"></i>
+							</div>
+							<div class="contact-details">
+								<h5 class="contact-heading-text">Mobile Number</h5>
+								<p>(361) 246-6574</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Contact Form -->
+		<section id="contact" class="contact">
+			<div class="container-fluid">				
+				<div class="row">
+					<div class="col-sm-12 col-md-6 no-padding">
+					</div>
+					<div class="padding-top-130 padding-bottom-110 padding-left-30 padding-right-30">
+						<div class="section-heading">
+							<h2 class="heading" align="center">Contact</h2>
+							<p class="additional-heading"  align="center">Have an idea? I'm currently taking requests for projects. Fill out the form below and i will respond usually within 24 hours.</p>
+						</div>
+
+
+						{{ Form::open(array('action' => 'HomeController@sendMail','id' => 'contactForm','class'=>'contact-form')) }}
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="control-group">
+										<div class="form-group floating-label-form-group controls">
+											<input type="text" class="form-control" placeholder="Name *" id="name" name="name" required data-validation-required-message="Please enter your name.">
+											<p class="help-block text-danger required-alert"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<div class="form-group floating-label-form-group controls">
+											<input type="email" class="form-control" placeholder="Email Address *" id="email" required data-validation-required-message="Please enter your email address." name="email">
+											<p class="help-block text-danger required-alert"></p>
+										</div>
+									</div>
+									<div class="control-group">
+										<div class="form-group floating-label-form-group controls">
+											<textarea rows="4" class="form-control" placeholder="Message *" id="message" name="message" required data-validation-required-message="Please enter a message."></textarea>
+											<p class="help-block text-danger required-alert"></p>
+										</div>
+									</div>
+								</div>
+								<div class="form-group col-xs-12 margin-20">
+									<button type="submit" class="btn btn-default primary-typo">SUBMIT</button>
+								</div>								
+								<div class="clearfix"></div>
+								<div class="text-left clearfix">
+									<div id="success"></div>
+								</div>
+							</div>
+						{{Form::close()}}
+					</div>
+				</div>				
+			</div>
+		</section>
+			
+		
+		<!-- Footer menu -->
+		<div id="footer-area" class="footer">
+			<div class="container">
+				<div class="footer-social text-center">
+					<ul class="social-icons small list-inline">
+						<li><a href="https://www.linkedin.com/in/josegarza1">LinkedIn</a></li>
+						<li><a href="https://github.com/jdg223">GitHub</a></li>
+					</ul>
+				</div>
+				<div class="separator separator_center footer-sep">
+					<span class="sep_holder sep_holder_r"><span class="sep_line"></span></span>
+				</div>	
+				<div id="colophon" class="footer-colophon text-center">
+					<p class="site-info small">JD Garza @2015</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="throbbers_loader">
+		<div class="throbber">JD Garza.com</div>
+	</div>
+		
+	<!-- Javascripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.valid.js"></script>
+	<script src="js/portfolio-plugins.js"></script>
+	<script src="js/portfolio.js"></script>
+
+		
+</body>
+</html>

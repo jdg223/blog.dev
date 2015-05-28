@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/','HomeController@showWelcome');
+Route::get('/','HomeController@showPortfolio');
 
 Route::get('sayhello/{name}','HomeController@sayHello');
 
 Route::get('resume','HomeController@showResume');
-
-Route::get('portfolio','HomeController@showPortfolio');
 
 Route::get('rolldice/{dice}','HomeController@rollDice');
 
@@ -28,6 +26,16 @@ Route::get('login','HomeController@showLogin');
 Route::post('login','HomeController@checkLogin');
 
 Route::get('logout','HomeController@logout');
+
+Route::get('whackamole','HomeController@showMole');
+
+Route::get('simpleSimon','HomeController@showSimon');
+
+Route::get('ajaxWeather','HomeController@ajaxWeather');
+
+Route::get('getListed','HomeController@getListed');
+
+Route::post('sendMail','HomeController@sendMail');
 
 // Route::get('logout','HomeController@logout');
 

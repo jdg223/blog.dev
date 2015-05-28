@@ -25,12 +25,12 @@
       </div>
       <div class="modal-body">
     	{{ Form::open(array('action' => 'HomeController@checkLogin')) }}
-			<br>
-			{{ Form::label('email', 'Email') }}
-			{{ Form::email('email',Input::old('email'), array('class' => 'form-control', 'id' =>"email", 'name' => "email", 'placeholder' => "email")) }}
-			<br>
-			{{ Form::label('password', 'Password') }}
-			{{ Form::password('password', array('class' => 'form-control', 'id' =>"password", 'name' => "password", 'placeholder' => "password")) }}			
+			   <br>
+  			{{ Form::label('email', 'Email') }}
+  			{{ Form::email('email',Input::old('email'), array('class' => 'form-control', 'id' =>"email", 'name' => "email", 'placeholder' => "email")) }}
+			   <br>
+  			{{ Form::label('password', 'Password') }}
+  			{{ Form::password('password', array('class' => 'form-control', 'id' =>"password", 'name' => "password", 'placeholder' => "password")) }}			
       </div>
       <div class="modal-footer">
         	{{Form::button('Submit', array('class' => 'btn btn-primary', 'type' => "submit")) }}

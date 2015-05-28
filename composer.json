@@ -8,7 +8,8 @@
 		"laravel/framework": "4.2.*",
 		"barryvdh/laravel-debugbar":"~1.8",
 		"fzaninotto/faker": "1.4.*",
-		"way/generators": "2.6.1"
+		"way/generators": "2.6.1",
+		"guzzlehttp/guzzle": "~5.0"
 	},
 	"autoload": {
 		"classmap": [

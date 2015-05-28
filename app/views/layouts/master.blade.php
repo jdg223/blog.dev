@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html>
 	<head>
 		@yield('head')	
 	</head>

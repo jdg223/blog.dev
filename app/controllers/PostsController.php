@@ -4,7 +4,7 @@ class PostsController extends \BaseController {
 
 public function __construct()
 {
-	$this->beforeFilter('auth', array('only' => array('index','create')));
+	// $this->beforeFilter('auth', array('only' => array('index','create')));
 }
 	/**
 	 * Display a listing of the resource.

@@ -1,19 +1,5 @@
-/*------------------------------------------------------------------
-[Table of contents]
-
-  1. BACKGROUND IMAGES
-    
-    #NOTE : images are provided by placeholdit.net replace with
-            your images. 
-------------------------------------------------------------------*/
-/*#####################[   B   E   G  I  N   ]###################*/
-/*------------------------------------------------------------------
-
-1. BACKGROUND IMAGES
-
-------------------------------------------------------------------*/
 .bg1 {
-  background-image:url(../img/head.jpg);
+  background-image:url("../images/forest.jpg");
   background-position:center;
   background-size:cover
 }
@@ -25,7 +11,7 @@
 }
 
 .bg3 {
-  background-image:url(../img/head4.jpg);
+  background-image:url("../images/camera-man.jpg");
   background-position:center;
   background-size:cover
 }
@@ -55,7 +41,7 @@
 }
 
 .bg9 {
-  background-image:url(https://unsplash.it/1440/710?image=179);
+  background-image:url(../images/scuba.jpeg);
   background-position:center;
   background-size:cover
 }

@@ -107,47 +107,6 @@
 
 			}
 
-		// Parallax background.
-
-			// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-				if (skel.vars.browser == 'ie'
-				||	skel.vars.isMobile)
-					settings.parallax = false;
-
-			if (settings.parallax) {
-
-				var $dummy = $(), $bg;
-
-				$window
-					.on('scroll.overflow_parallax', function() {
-
-						// Adjust background position.
-							$bg.css('background-position', 'center ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-
-					})
-					.on('resize.overflow_parallax', function() {
-
-						// If we're in a situation where we need to temporarily disable parallax, do so.
-							if (!skel.isActive('wide')
-							||	skel.isActive('narrow')) {
-
-								$body.css('background-position', '');
-								$bg = $dummy;
-
-							}
-
-						// Otherwise, continue as normal.
-							else
-								$bg = $body;
-
-						// Trigger scroll handler.
-							$window.triggerHandler('scroll.overflow_parallax');
-
-					})
-					.trigger('resize.overflow_parallax');
-
-			}
-
 		// Poptrox.
 			$('.gallery').poptrox({
 				useBodyOverflow: false,

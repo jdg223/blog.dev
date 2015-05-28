@@ -89,7 +89,58 @@ class HomeController extends BaseController {
 		Auth::logout();
 		Redirect::to('portfolio');
 	}
-}
 
+	public function showMole()
+	{
+		return View::make('whackamole');
+	}
+
+	public function showSimon()
+	{
+		return View::make('simpleSimon');
+	}
+	public function ajaxWeather()
+	{
+		return View::make('ajax_weather');
+	}
+
+	public function getListed()
+	{
+		return View::make('get-listed/public/index.php');
+	}
+
+	public function sendMail()
+	{
+        $data = Input::all();
+        
+        $rules = array (
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required'
+        );
+
+        
+        $validator  = Validator::make($data, $rules);
+
+        
+        if ($validator -> passes()){
+
+            
+            Mail::send('email', $data, function($message) use ($data)
+            {
+			
+             $message->from($data['email'] , $data['name']);
+			                   
+			$message->to('jdgarza22@yahoo.com', 'jd garza')->cc('jdgarza22@yahoo.com')->subject('request or project idea');
+            });
+				
+            return Redirect::back();  
+        }else{
+	
+            return Redirect::back()->withErrors($validator);
+        }
+    }
+
+}
 
 
