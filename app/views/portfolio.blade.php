@@ -29,7 +29,7 @@
 				<nav class="nav-menu page-scroll" >
 					<ul class="nav-menu-content">
 						<li><a href="#works">Work</a></li>
-						<li><a href="#services">Services</a></li>
+						<li><a href="#services">Solutions</a></li>
 						<li><a href="posts">Blog</a></li>
 						<li><a href="resume">Resume</a></li>
 						<li><a href="#contact">Contact</a></li>
@@ -40,7 +40,7 @@
 		<nav class="tab-nav-menu page-scroll" >
 			<ul class="tab-nav-menu-content container">
 				<li><a href="#works">Work</a></li>
-				<li><a href="#services">Services</a></li>
+				<li><a href="#services">Solutions</a></li>
 				<li><a href="posts">Blog</a></li>
 				<li><a href="resume">Resume</a></li>
 				<li><a href="#contact">Contact</a></li>
