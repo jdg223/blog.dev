@@ -4,10 +4,7 @@
 	<title>Portfolio</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- favicon -->
-	<link rel="shortcut icon" href="img/favicon.png">
-	
+		
 	<link href="css/portfolio.css" rel="stylesheet" type="text/css" />
 	<link href="css/portfolio-plugins.css" rel="stylesheet" type="text/css" />
 	<link href="css/fonts/ionicons.css" rel="stylesheet">
@@ -34,6 +31,7 @@
 						<li><a href="#works">Work</a></li>
 						<li><a href="#services">Services</a></li>
 						<li><a href="posts">Blog</a></li>
+						<li><a href="resume">Resume</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>		
@@ -44,6 +42,7 @@
 				<li><a href="#works">Work</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="posts">Blog</a></li>
+				<li><a href="resume">Resume</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>	
