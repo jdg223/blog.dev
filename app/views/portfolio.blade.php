@@ -147,7 +147,7 @@
 											</div>
 											<div class="service-2-text">
 												<h5 class="heading heading-underlined">PHP & Laravel</h5>
-												<p>For those that need something more than just a beautiful website, I can develop an application for virtually anything that someone may need</p>
+												<p>For those that need something more than just a beautiful website, I can develop an application for virtually anything that someone may need. I make use of the Laravel PHP Framework as it allows me to build an application in a proficient amount of time and is fun to use.</p>
 											</div>
 										</div>
 									</div>
@@ -158,7 +158,7 @@
 											</div>
 											<div class="service-2-text">
 												<h5 class="heading heading-underlined">MySQL Databases</h5>
-												<p>Nunc in elit nec dolor consectetur sodales. Mauris tellus nulla, hendrerit sit amet porta sit amet.</p>
+												<p>For 'Back-End' work I use MySQL databases to store data</p>
 											</div>
 										</div>
 									</div>
@@ -169,7 +169,7 @@
 											</div>
 											<div class="service-2-text">
 												<h5 class="heading heading-underlined">LEMP</h5>
-												<p><strong>ABBR.</strong>(Linux,Nginx,MySql,PHP),Nunc in elit nec dolor consectetur sodales. Mauris tellus nulla, hendrerit sit amet porta sit amet.</p>
+												<p><strong>ABBR.</strong>(Linux,Nginx,MySql,PHP), I am a LEMP developer as you might have guessed from reading my other descriptions regarding development. I really enjoy using this stack and find that it is very efficient when used for application development.</p>
 											</div>
 										</div>
 									</div>
