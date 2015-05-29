@@ -370,7 +370,7 @@
 					<span class="sep_holder sep_holder_r"><span class="sep_line"></span></span>
 				</div>	
 				<div id="colophon" class="footer-colophon text-center">
-					<p class="site-info small">JD Garza @2015</p>
+					<p class="site-info small">JD Garza Design & Development 2015</p>
 				</div>
 			</div>
 		</div>
