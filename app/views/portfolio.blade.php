@@ -363,6 +363,7 @@
 					<ul class="social-icons small list-inline">
 						<li><a href="https://www.linkedin.com/in/josegarza1">LinkedIn</a></li>
 						<li><a href="https://github.com/jdg223">GitHub</a></li>
+						<li><a href="http://alumni.codeup.com/students/98">CodeUp Profile</a></li>
 					</ul>
 				</div>
 				<div class="separator separator_center footer-sep">
