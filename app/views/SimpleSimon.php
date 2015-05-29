@@ -85,11 +85,7 @@
 
     <h2 id ="text">Watch This Sequence</h2>
     <h3 id ="round">Round:0</h3>
-
-
-          
-
-
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

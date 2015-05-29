@@ -97,7 +97,7 @@ class HomeController extends BaseController {
 
 	public function showSimon()
 	{
-		return View::make('simpleSimon');
+		return View::make('SimpleSimon');
 	}
 	public function ajaxWeather()
 	{
