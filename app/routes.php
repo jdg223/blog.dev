@@ -29,7 +29,7 @@ Route::get('logout','HomeController@logout');
 
 Route::get('whackamole','HomeController@showMole');
 
-Route::get('simpleSimon','HomeController@showSimon');
+Route::get('SimpleSimon','HomeController@showSimon');
 
 Route::get('ajaxWeather','HomeController@ajaxWeather');
 
