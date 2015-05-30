@@ -12,7 +12,6 @@
 	<link href="css/portfolio-plugins.css" rel="stylesheet" type="text/css" />
 	<link href="css/fonts/ionicons.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/portfolio-style.css" rel="stylesheet" type="text/css" />	
 	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
 	
