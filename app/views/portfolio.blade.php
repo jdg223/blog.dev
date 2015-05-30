@@ -12,6 +12,7 @@
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/portfolio-style.css" rel="stylesheet" type="text/css" />	
 	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	<meta name="p:domain_verify" content="3f38916399d45b38d8a04b5275a765f9"/>
 	
 	
 	<!-- Google Font -->
