@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Portfolio</title>
+	<title>JD Garza Full Stack Software Engineer</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="I am a Full Stack Software Engineer that loves to code and is always learning the newest technology for use in my applications">
@@ -163,7 +163,7 @@
 											</div>
 											<div class="service-2-text">
 												<h5 class="heading heading-underlined">PHP & Laravel</h5>
-												<p>For those that need something more than just a beautiful website, I can develop an application for virtually anything that someone may need. I make use of the Laravel PHP Framework as it allows me to build an application in a proficient amount of time and is fun to use.</p>
+												<p>For those that need something more than just a beautiful website, I am also a software enginner and can develop an application for virtually anything that someone may need. I make use of the Laravel PHP Framework as it allows me to build an application in a proficient amount of time and is fun to use.</p>
 											</div>
 										</div>
 									</div>
@@ -185,7 +185,7 @@
 											</div>
 											<div class="service-2-text">
 												<h5 class="heading heading-underlined">LEMP</h5>
-												<p><strong>ABBR.</strong>(Linux,Nginx,MySql,PHP), I am a LEMP developer as you might have guessed from reading my other descriptions regarding development. I really enjoy using this stack and find that it is very efficient when used for application development.</p>
+												<p><strong>ABBR.</strong>(Linux,Nginx,MySql,PHP), I am a LEMP software developer as you might have guessed from reading my other descriptions regarding development. I really enjoy using this stack and find that it is very efficient when used for application development.</p>
 											</div>
 										</div>
 									</div>
