@@ -4,7 +4,7 @@
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
 
-  <title>{{ $post->title }}</title>
+  <title>{{ $post->title }} by JD Garza</title>
   
   <script src="../js/pace.min.js" type="text/javascript"></script>
   

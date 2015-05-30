@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
     
     
-	<title>Resume</title>
+	<title>JD Garza's Resume</title>
     
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
@@ -50,7 +50,7 @@
 	  ga('create', 'UA-63551459-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
-	
+
 </head>
 <body>
  

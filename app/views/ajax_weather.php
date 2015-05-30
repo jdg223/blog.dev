@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Weather App</title>
+    <title>Weather App Made By JD Garza</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
       <style type="text/css">
 
@@ -70,7 +70,7 @@
       ga('create', 'UA-63551459-1', 'auto');
       ga('send', 'pageview');
     </script>   
-          
+
 </head>
   <body>
     <!-- contains weather map -->
