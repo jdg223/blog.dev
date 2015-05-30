@@ -5,6 +5,9 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="I am a Full Stack Software Engineer that loves to code and is always learning the newest technology for use in my applications">
+	<meta name="p:domain_verify" content="3f38916399d45b38d8a04b5275a765f9"/>
+
+	<!-- CSS Files -->
 	<link href="css/portfolio.css" rel="stylesheet" type="text/css" />
 	<link href="css/portfolio-plugins.css" rel="stylesheet" type="text/css" />
 	<link href="css/fonts/ionicons.css" rel="stylesheet">
@@ -12,7 +15,7 @@
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/portfolio-style.css" rel="stylesheet" type="text/css" />	
 	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
-	<meta name="p:domain_verify" content="3f38916399d45b38d8a04b5275a765f9"/>
+	
 	
 	
 	<!-- Google Font -->
